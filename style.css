@@ -200,8 +200,8 @@ footer {
   grid-area: right;
 }
 
-section.book-apt {
-  background: url("images/cleaner-with-bowl.jpg") left top/cover no-repeat;
+.book-apt {
+  background: url("/images/cleaner-with-bowl.jpg") left top/cover no-repeat;
   height: 850px;
   /* display: grid;
   grid-template-areas:
