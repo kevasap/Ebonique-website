@@ -5,6 +5,10 @@
   --text-color: #003026;
 }
 
+a {
+  color: inherit;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -20,26 +24,33 @@ footer {
 }
 
 .main-container {
-  max-width: 95vw;
-  margin: 20px auto;
-  border-radius: 20px;
+  max-width: 97vw;
+  margin: 1.25rem auto;
+  border-radius: 1rem;
   /* background-color: #fffafc; */
   overflow: hidden;
   position: relative;
 }
 
+.aaa {
+  position: absolute;
+  top: 4em;
+  right: 8%;
+  left: 8%;
+  z-index: 100;
+  /* border: solid 5px rgba(255, 255, 255, 90%);
+  padding: 5px;
+  border-radius: 5px; */
+}
+
 .top-nav {
   /* border: solid 2px red; */
-  padding: 1em 15vw;
+  padding: 0.85em 5vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.07);
-  position: absolute;
-  top: 4em;
-  right: 0;
-  left: 0;
-  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
 .top-nav ul {
@@ -62,14 +73,23 @@ footer {
 
 .top-menu li {
   display: flex;
-  margin-right: 1.2rem;
+  /* margin-right: 1.2rem; */
 }
 .top-menu a {
   font-family: var(--header-font);
   font-size: 1.25rem;
+  border-bottom: solid 2px rgba(0, 0, 0, 0);
   font-weight: 600;
+  padding: 0.5rem;
+  margin-right: 1.2rem;
   color: white;
   text-shadow: 0px 0px 13px rgba(0, 0, 0, 0.5);
+  transition: all 200ms ease-in-out;
+}
+
+.top-menu a:hover {
+  transform: translateY(-3px);
+  border-bottom-color: white;
 }
 
 /* .top-nav button {
@@ -89,7 +109,7 @@ footer {
   bottom: 0;
   z-index: 99;
   width: 100%;
-  height: 90vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -138,11 +158,37 @@ footer {
   background: #00eec0;
 }
 
+.btn-misc {
+  transition: all 200ms ease-in-out;
+}
+
+.btn-misc:hover {
+  background-color: rgb(157, 187, 25);
+  outline: 0.125rem solid white;
+  outline-offset: -0.125rem;
+}
+
+.btn-misc a {
+  font-family: var(--header-font);
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+}
+
 .services {
+  height: auto;
+  width: 100%;
+  padding: 5em;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  /* justify-content: space-between; */
   justify-items: center;
   align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+.feat {
+  position: relative;
 }
 
 .featured {
@@ -150,19 +196,48 @@ footer {
   width: 15em;
   text-align: center;
   margin: 5em 0;
-  background: rgba(153, 176, 168, 0.1);
+  background: rgba(153, 176, 168, 0.2);
   border-radius: 50%;
+  position: relative;
+  z-index: 100;
+  transition: all 250ms ease-in-out;
+  /* transition: all 250ms cubic-bezier(0.68, -0.55, 0.27, 1.55); */
 }
 
-.featured p {
-  color: black;
+.featured:hover {
+  /* transform: scale(1.5, 2); */
+  border-radius: 5px;
+  width: 19.5em;
+  height: 20em;
+  /* -webkit-box-shadow: -1px 5px 15px 5px rgba(54, 11, 11, 0.5);
+  -moz-box-shadow: -1px 5px 15px 5px rgba(54, 11, 11, 0.5); */
+  box-shadow: -1px 5px 15px 5px rgba(54, 11, 11, 0.5);
+}
+
+.ft-para {
+  height: 35%;
+  color: rgb(0, 0, 0);
+  font-size: 0.95rem;
+  border-top: rgba(153, 176, 168, 1) 1px solid;
+  align-content: center;
   opacity: 0%;
   text-align: left;
-  line-height: 1.7;
-  margin-top: 1.5em;
+  line-height: 1.6;
+  margin-top: 1em;
+  padding: 0.5em;
+  position: absolute;
+  top: 1;
+  bottom: 0;
+  /* z-index: 1; */
+  /* background-color: rgba(0, 0, 0, 0); */
+  /* transform: scale(0, 0); */
+  transition: all 250ms ease-in-out;
 }
 
-.featured p:hover {
+.ft-para:hover {
+  color: #003026;
+  background-color: white;
+  /* z-index: 100; */
   opacity: 100%;
 }
 
@@ -177,6 +252,7 @@ footer {
   grid-template-areas: "left right";
   justify-items: center;
   align-items: center;
+  padding: 5em;
   /* background-color: #fff; */
   /* background-color: #fffafc; */
 }
@@ -198,6 +274,7 @@ footer {
 .about img {
   max-width: 33vw;
   grid-area: right;
+  border-radius: 25%;
 }
 
 .book-apt {
@@ -316,11 +393,11 @@ footer {
   .services {
     grid-template-columns: repeat(2, 1fr);
   }
-  .top-nav {
-    position: fixed;
-    top: 0;
-    /* z-index: -1;
-    width: 95vw;
-    margin: 0 auto; */
-  }
+  /* .aaa {
+      position: fixed;
+      top: 0;
+      z-index: -1;
+      width: 95vw;
+      margin: 0 auto;
+    } */
 }

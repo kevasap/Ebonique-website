@@ -19,18 +19,24 @@
 </head>
 <body>
     <div class="main-container">
-        <nav class="top-nav">
-            <h1 class="logo">
-                <span>A</span>nna's<span>C</span>leaning<span>S</span>ervices
-            </h1>
-            <ul class="top-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <button class="hero-btn">Book Now</button>
-        </nav>
+        <div class="aaa">
+            <nav class="top-nav">
+                <h1>
+                    <a class="logo" href="#">
+                        <span>A</span>nna's<span>C</span>leaning<span>S</span>ervices
+                    </a>
+                </h1>
+                <ul class="top-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                
+                <button class="hero-btn btn-misc"><a href="#">Book Now</a></button>
+                
+            </nav>
+        </div>
         <div class="ism-slider" data-transition_type="fade" data-play_type="loop" data-image_fx="zoomrotate" id="my-slider">
             <ol>
               <li>
@@ -50,39 +56,46 @@
                 
               </li>
             </ol>
+            <section class="hero">
+                <h1>We're More Than Just a Cleaner</h1>
+                <p>We Provide Peace of Mind Too</p>
+                <div class="hero-btns">
+                    <button class="hero-btn btn1 btn-misc"><a href="#">Book Appointment</a></button>
+                    <button class="hero-btn btn2 btn-misc"><a href="#services">See our services</a></button>
+                </div>
+            </section>
           </div>
-          
-        <section class="hero">
-            <h1>We're More Than Just a Cleaner</h1>
-            <p>We Provide Peace of Mind Too</p>
-            <div class="hero-btns">
-                <button class="hero-btn btn1">Book Appointment</button>
-                <button class="hero-btn btn2">See our services</button>
+        <section id="services" class="services">
+            <div class="feat">
+                <div class="featured ft-item1">
+                    <i class="fas fa-broom"></i>
+                    <h3>Housekeeping</h3>
+                    <p class="ft-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="feat">
+                <div class="featured ft-item2">
+                    <i class="fas fa-hand-sparkles"></i>
+                    <h3>Janitorial</h3>
+                    <p class="ft-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>                
+                </div>
+            </div>
+            <div class="feat">
+                <div class="featured ft-item2">
+                    <i class="fas fa-wheelchair"></i>
+                    <h3>Home Health Aide</h3>
+                    <p class="ft-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="feat">
+                <div class="featured ft-item2">
+                    <i class="fas fa-baby-carriage"></i>
+                    <h3>Babysitting</h3>
+                    <p class="ft-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
             </div>
         </section>
-        <section class="services">
-            <div class="featured ft-item1">
-                <i class="fas fa-broom"></i>
-                <h3>Housekeeping</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis officiis animi aspernatur temporibus deserunt odio numquam accusamus veniam nobis voluptatibus.</p>
-            </div>
-            <div class="featured ft-item2">
-                <i class="fas fa-hand-sparkles"></i>
-                <h3>Janitorial</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis officiis animi aspernatur temporibus deserunt odio numquam accusamus veniam nobis voluptatibus.</p>
-            </div>
-            <div class="featured ft-item2">
-                <i class="fas fa-wheelchair"></i>
-                <h3>Home Health Aide</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis officiis animi aspernatur temporibus deserunt odio numquam accusamus veniam nobis voluptatibus.</p>
-            </div>
-            <div class="featured ft-item2">
-                <i class="fas fa-baby-carriage"></i>
-                <h3>Babysitting</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis officiis animi aspernatur temporibus deserunt odio numquam accusamus veniam nobis voluptatibus.</p>
-            </div>
-        </section>
-        <section class="about">
+        <section id="about" class="about">
             <div class="about-Anna">
                 <h2>Meet Anna</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nulla a doloremque quae fugiat voluptatum.
@@ -97,7 +110,7 @@
             <div class="card">
                 <h2>Click Below to Set Appointment</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis itaque ut earum soluta non corrupti praesentium voluptatum in facere! Cumque.</p>
-                <button class="hero-btn">Book Now</button>
+                <button class="hero-btn btn-misc"><a href="#">Book Now</a></button>
             </div>
         </section>
         <footer class="foot-area">
@@ -119,7 +132,7 @@
                     <!-- <li><a href="#">Contact</a></li> -->
                 </ul>
             </nav>
-            <div class="contact">
+            <div id="contact" class="contact">
                 <ul>
                     <li>Contact:</li>
                     <li>Available Mondays to Fridays - 9am - 6pm</li>
@@ -128,7 +141,7 @@
                 </ul>
             </div>
             <div class="copy">
-                &copy; 2021, Designed by Web TopShot
+                &copy; 2021, Designed by K.Mac
             </div>
         </footer>
     </div>
