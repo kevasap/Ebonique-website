@@ -21,7 +21,12 @@
     <div class="main-container">
         <div class="aaa">
             <nav class="top-nav">
-                <h1>
+                <div class="hamburger" onclick="slide-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <h1 class="head-logo">
                     <a class="logo" href="#">
                         <span>A</span>nna's<span>C</span>leaning<span>S</span>ervices
                     </a>
@@ -39,6 +44,10 @@
         </div>
         <div class="ism-slider" data-transition_type="fade" data-play_type="loop" data-image_fx="zoomrotate" id="my-slider">
             <ol>
+              <!-- <li>
+                <img src="ism/image/slides/Nica-wall-smile.jpg">
+                
+              </li> -->
               <li>
                 <img src="ism/image/slides/wipe-woman.jpg">
                 
@@ -70,28 +79,28 @@
                 <div class="featured ft-item1">
                     <i class="fas fa-broom"></i>
                     <h3>Housekeeping</h3>
-                    <p class="ft-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    
                 </div>
             </div>
             <div class="feat">
                 <div class="featured ft-item2">
                     <i class="fas fa-hand-sparkles"></i>
                     <h3>Janitorial</h3>
-                    <p class="ft-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>                
+                    
                 </div>
             </div>
             <div class="feat">
                 <div class="featured ft-item2">
                     <i class="fas fa-wheelchair"></i>
                     <h3>Home Health Aide</h3>
-                    <p class="ft-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    
                 </div>
             </div>
             <div class="feat">
                 <div class="featured ft-item2">
                     <i class="fas fa-baby-carriage"></i>
                     <h3>Babysitting</h3>
-                    <p class="ft-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    
                 </div>
             </div>
         </section>
@@ -103,7 +112,8 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nulla a doloremque quae fugiat voluptatum
                 </p>
             </div>
-            <img src="images/Nica-dress.jpg" alt="Anna in a dress">
+            <img src="images/Nica-wall-smile-3.jpg" alt="Anna in a dress">
+            
         </section>
         <section class="book-apt">
             <!-- <div class="placeholder"> </div> -->
@@ -117,15 +127,16 @@
             <div class="social">
                 <ul>
                     <span style="margin-right:1em;color:#fff; font: 300 12px 'Noto Sans KR', sans-serif;">Follow Us:</span>
-                    <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i>Facebook</a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
-                    <li><a href="#"><i class="fab fa-tiktok"></i>Tik Tok</a></li>
-                    <li><a href="#"><i class="fab fa-youtube"></i>Youtube</a></li>
+                    <!-- <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li> -->
+                    <li><i class="fab fa-facebook-f"></i><a href="#">Facebook</a></li>
+                    <li><i class="fab fa-instagram"></i><a href="#">Instagram</a></li>
+                    <!-- <li><a href="#"><i class="fab fa-tiktok"></i>Tik Tok</a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i>Youtube</a></li> -->
                 </ul>
             </div>
             <nav class="foot-nav">
                 <ul>
+                    <li>Navigation:</li>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
@@ -134,7 +145,7 @@
             </nav>
             <div id="contact" class="contact">
                 <ul>
-                    <li>Contact:</li>
+                    <li id="no-deco">Contact:</li>
                     <li>Available Mondays to Fridays - 9am - 6pm</li>
                     <li>Anna@heremail.com</li>
                     <li>(555) 555-5555</li>
